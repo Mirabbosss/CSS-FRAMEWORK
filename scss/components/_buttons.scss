@@ -1,0 +1,135 @@
+.btn {
+    padding: 10px 15px;
+    border: 1px solid $color-black;
+    border-radius: 5px;
+}
+
+.btn-w-100 {
+    width: 100px;
+}
+
+.btn-w-200 {
+    width: 200px;
+}
+
+
+.btn-w-300 {
+    width: 300px;
+}
+
+
+.btn-w-400 {
+    width: 400px;
+}
+
+
+.btn-w-500 {
+    width: 500px;
+}
+
+.btn-w-full {
+    width: 100%;
+}
+
+.btn-h-10 {
+    height: 10px;
+}
+
+.btn-h-20 {
+    height: 20px;
+}
+
+
+.btn-h-30 {
+    height: 30;
+}
+
+.btn-h-40 {
+    height: 40px;
+}
+
+
+.btn-h-50 {
+    height: 50px;
+}
+
+
+.btn-dark-blue {
+    background-color: $color-dark-blue;
+    color: $color-white;
+    cursor: pointer;
+
+    &:hover {
+        opacity: 0.8;
+    }
+}
+
+.btn-light-blue {
+    background-color: $color-light-blue;
+    color: $color-white;
+    cursor: pointer;
+
+    &:hover {
+        opacity: 0.8;
+    }
+}
+
+.btn-green {
+    background-color: $color-dark-green;
+    color: $color-white;
+    cursor: pointer;
+
+    &:hover {
+        opacity: 0.8;
+    }
+}
+
+.btn-red {
+    background-color: $color-light-red;
+    color: $color-white;
+    cursor: pointer;
+
+    &:hover {
+        opacity: 0.8;
+    }
+}
+
+.btn-yellow {
+    background-color: $color-light-yellow;
+    color: $color-white;
+    cursor: pointer;
+
+    &:hover {
+        opacity: 0.8;
+    }
+}
+
+.btn-orange {
+    background-color: $color-orange;
+    color: $color-white;
+    cursor: pointer;
+
+    &:hover {
+        opacity: 0.8;
+    }
+}
+
+.btn-pink {
+    background-color: $color-pink;
+    color: $color-white;
+    cursor: pointer;
+
+    &:hover {
+        opacity: 0.8;
+    }
+}
+
+.btn-black {
+    background-color: $color-black;
+    color: $color-white;
+    cursor: pointer;
+
+    &:hover {
+        opacity: 0.8;
+    }
+}

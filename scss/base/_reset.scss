@@ -1,0 +1,59 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: sans-serif;
+    font-weight: normal;
+
+    &:has(.theme:checked) {
+        background-image: $background-gradient;
+
+        .search_wrapper input {
+            color: $color-white;
+        }
+
+        .left__menu li {
+            a {
+                color: $color-white;
+            }
+
+            &:hover {
+                background-color: $color-dark-blue;
+
+                a {
+                    color: $color-light-blue;
+                }
+            }
+        }
+    }
+}
+
+.container {
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+a {
+    text-decoration: none;
+    background-color: transparent;
+}
+
+ul {
+    list-style-type: none;
+}
+
+button {
+    border: none;
+    outline: none;
+}
+
+p {
+    padding: 70px;
+}

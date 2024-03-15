@@ -1,0 +1,108 @@
+header {
+    width: 100%;
+    background: $header-gradient-white;
+    position: fixed;
+    z-index: 99;
+
+    &:has(.theme:checked) {
+        background-color: $header-gradient-white;
+
+        nav {
+            #toggle {
+                color: $color-black;
+            }
+
+            .search_wrapper {
+                background-color: $color-gray;
+    
+                input {
+                    background-color: transparent;
+    
+                    &::placeholder {
+                        color: $color-white;
+                    }
+                }
+    
+                .search_icon {
+                    color: $color-white;
+                }
+            }
+        }
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 10px;
+
+        .logo {
+            font-size: 30px;
+            font-weight: 900;
+
+            span {
+                color: $color-light-blue;
+                font-size: 40px;
+            }
+        }
+
+        .search_wrapper {
+            padding: 0;
+            background-color: $color-white;
+            display: flex;
+            padding: 5px 10px;
+            border-radius: 20px;
+
+            input {
+                border: none;
+                outline: none;
+                padding: 5px 10px;
+                font-size: 20px;
+                color: $color-black;
+
+            }
+
+            .search_icon {
+                display: grid;
+                place-content: center;
+                color: $color-gray;
+                font-size: 40px;
+            }
+        }
+
+        #toggle {
+            font-weight: 900;
+            font-size: 50px;
+            cursor: pointer;
+        }
+
+        .theme {
+            width: 45px;
+            height: 25px;
+            background-color: $color-gray;
+            border-radius: 15px;
+            appearance: none;
+            cursor: pointer;
+
+            &::after {
+                content: "";
+                width: 22.5px;
+                border-radius: 50%;
+                height: 25px;
+                background-color: $color-white;
+                display: inline-block;
+                transition: all 0.4s ease-in-out;
+            }
+        }
+
+        .theme:checked:after {
+            content: "";
+            width: 22.5px;
+            border-radius: 50%;
+            height: 25px;
+            background-color: $color-black;
+            display: inline-block;
+            transform: translate(22.5px);
+        }
+    }
+}

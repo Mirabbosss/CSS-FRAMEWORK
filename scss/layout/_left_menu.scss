@@ -1,0 +1,45 @@
+.left__menu {
+    transform: translateY(-100%);
+    display: none;
+    z-index: -1;
+    transition: all 1.6s ease;
+
+    nav {
+        padding: 10px 0;
+
+        ul {
+            display: flex;           
+            row-gap: 20px;
+            padding: 0px;
+            margin: 0 auto;
+
+            li {
+                height: 40px;
+                padding: 10px 20px;
+                transition: all 0.5s ease;
+                cursor: pointer;
+                border-radius: 20px;
+
+                &:hover {
+                    background-color: $color-dark-blue;
+
+                    a {
+                        color: $color-light-blue;
+                    }
+                }
+
+                a {
+                    margin-top: 5px;
+                    font-size: 15px;
+                    font-weight: 600;
+                    color: $color-black;
+                }
+            }
+        }
+    }
+}
+
+.menu-hide {
+    transform: translateY(0);
+    display: block;
+}

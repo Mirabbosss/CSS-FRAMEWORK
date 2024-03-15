@@ -1,0 +1,30 @@
+#link_opacity {
+    width: 100%;
+
+    h1 {
+        font-weight: 900;
+        font-size: 60px;
+    }
+
+    .wrapper {
+        h1 {
+            color: $color-light-blue;
+        }
+
+        a {
+            display: block;
+        }
+
+        padding: 120px 0 60px 0;
+    }
+
+    .wrapper__codes {
+        h1 {
+            text-align: center;
+        }
+        
+        padding: 30px;
+        background-color: $color-black;
+        color: $color-white;
+    }
+}
